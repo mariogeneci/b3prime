@@ -29,7 +29,8 @@ jobs:
         buildozer android debug
 
     - name: Upload APK
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3   # <--- aqui a mudança
       with:
         name: apk
         path: bin/*.apk
+
